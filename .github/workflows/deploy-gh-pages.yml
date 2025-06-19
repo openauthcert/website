@@ -20,8 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build VitePress site
-        run: npm run build
+      - name: Build with VitePress
+        run: npx vitepress build docs
+
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
