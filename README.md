@@ -1,3 +1,4 @@
+[![Rebuild Website](https://github.com/openauthcert/website/actions/workflows/deploy-gh-pages.yml/badge.svg?branch=main)](https://github.com/openauthcert/website/actions/workflows/deploy-gh-pages.yml)
 ![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)
 
 # 🌐 OpenAuthCert Website
