@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as r,ae as o}from"./chunks/framework.Dgg8-8ov.js";const u=JSON.parse('{"title":"🔖 Badge Catalog","description":"","frontmatter":{},"headers":[],"relativePath":"badges.md","filePath":"badges.md"}'),i={name:"badges.md"};function s(n,e,d,c,l,p){return r(),t("div",null,e[0]||(e[0]=[o("",17)]))}const g=a(i,[["render",s]]);export{u as __pageData,g as default};
