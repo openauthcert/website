@@ -1,0 +1,14 @@
+L{
+  "name": "openauthcert-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^1.2.0"
+  }
+}
