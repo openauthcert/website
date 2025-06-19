@@ -7,7 +7,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/favicon.svg',
-    siteTitle: 'Open Authentication Certification Initiative',
+    siteTitle: 'O.A.C.I.',
 
     nav: [
       { text: 'Home', link: '/' },
