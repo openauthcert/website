@@ -7,7 +7,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/favicon.svg',
-    siteTitle: 'O.A.C.I.',
+    siteTitle: '',
 
     nav: [
       { text: 'Home', link: '/' },
