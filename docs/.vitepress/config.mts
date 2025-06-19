@@ -1,16 +1,16 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'OpenAuthCert',
+  title: 'Open Authentication Certification Initiative',
   description: 'Open Authentication Certification Initiative',
   base: '/',
 
   themeConfig: {
     logo: '/favicon.svg',
-    siteTitle: 'OpenAuthCert',
+    siteTitle: 'Open Authentication Certification Initiative',
 
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: 'https://openauthcert.org/' },
       { text: 'Badges', link: '/badges' },
       { text: 'Vendors', link: '/vendors' },
       { text: 'GitHub', link: 'https://github.com/openauthcert' }
