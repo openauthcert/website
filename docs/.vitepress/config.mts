@@ -10,7 +10,7 @@ export default defineConfig({
     siteTitle: 'Open Authentication Certification Initiative',
 
     nav: [
-      { text: 'Home', link: 'https://openauthcert.org/' },
+      { text: 'Home', link: '/' },
       { text: 'Badges', link: '/badges' },
       { text: 'Vendors', link: '/vendors' },
       { text: 'GitHub', link: 'https://github.com/openauthcert' }
