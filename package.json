@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs --base /docs/",
     "serve": "vitepress serve docs",
     "dev-app": "vite",
     "build-app": "node scripts/fetch-registry.mjs && vite build"

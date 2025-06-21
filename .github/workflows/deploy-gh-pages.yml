@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Build with VitePress
-        run: npx vitepress build docs
+        run: npx vitepress build docs --base /docs/
 
 
       - name: Deploy to GitHub Pages
