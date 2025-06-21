@@ -21,10 +21,13 @@
         <router-link :to="'/registry/' + vendor.slug" class="text-xl font-semibold text-blue-600 hover:underline">
           {{ vendor.name }}
         </router-link>
+        <div class="text-sm text-gray-600">v{{ vendor.version }}</div>
         <div class="mt-2 flex items-center space-x-2">
           <img :src="`https://ghcr.io/openauthcert/badges/${vendor.badges[0].id}.svg`" :alt="vendor.badges[0].id" class="h-6" />
-          <span v-if="vendor.oidc" class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">OIDC</span>
-          <span v-if="vendor.saml" class="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">SAML</span>
+          <span class="text-xs text-gray-700">badge v{{ vendor.badges[0].version }}</span>
+          <span v-if="vendor.auth.oidc" class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded">OIDC</span>
+          <span v-if="vendor.auth.saml" class="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded">SAML</span>
+          <span v-if="vendor.auth.ldap" class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded">LDAP</span>
         </div>
         <div class="text-sm text-gray-600 mt-1">License: {{ vendor.license }}</div>
         <a :href="vendor.repo" class="text-sm text-blue-500 underline" target="_blank">Source</a>
@@ -47,8 +50,8 @@ const licenses = Array.from(new Set(registry.map(r => r.license))).filter(Boolea
 const filtered = computed(() => {
   return registry.filter(v => {
     const matchesSearch = v.name.toLowerCase().includes(search.value.toLowerCase());
-    const matchesOIDC = !filterOIDC.value || v.oidc;
-    const matchesSAML = !filterSAML.value || v.saml;
+    const matchesOIDC = !filterOIDC.value || v.auth.oidc;
+    const matchesSAML = !filterSAML.value || v.auth.saml;
     const matchesLicense = !filterLicense.value || v.license === filterLicense.value;
     return matchesSearch && matchesOIDC && matchesSAML && matchesLicense;
   });

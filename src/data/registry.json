@@ -1,12 +1,17 @@
 [
   {
     "slug": "acme",
-    "oidc": true,
-    "saml": false,
-    "license": "Unknown",
     "name": "Acme Identity Hub",
+    "version": "1.0.0",
     "website": "https://acme.example.com",
     "repo": "https://github.com/acme/openidp",
+    "documentation": "https://acme.example.com/docs",
+    "license": "Unknown",
+    "auth": {
+      "oidc": true,
+      "saml": false,
+      "ldap": true
+    },
     "badges": [
       {
         "id": "free-sso-idp",

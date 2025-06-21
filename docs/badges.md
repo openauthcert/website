@@ -4,6 +4,8 @@ Here you can find the currently defined certification badges issued by the **Ope
 
 Each badge represents a verified commitment to baseline identity access — without enterprise-only restrictions.
 
+Badges are issued for a specific **major version** of a project. Should a future release remove free SSO or IdP capabilities, the badge will expire or be revoked. Only OIDC, SAML, and LDAP protocols are eligible for certification, and all submission material must be in English.
+
 ---
 
 ## 🆓 `free-sso-idp`
